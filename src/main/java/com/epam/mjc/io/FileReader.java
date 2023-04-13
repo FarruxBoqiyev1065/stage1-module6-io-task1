@@ -24,7 +24,7 @@ public class FileReader {
             profile.setPhone(Long.valueOf(split[3].split(": ")[1]));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
         return profile;
     }
